@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#logo {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+
+.box {
+  width: 100%;
+  min-height: 50px;
+}
+
+.project_img {
+  background-size: cover;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.title {
+  background-color: white;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  min-height: 250px;
+}
+
+h2 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+
+.article {
+  width: 33%;
+  height: auto;
+}
+
+p {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.footer {
+  background-color: rgb(255, 79, 71);
+}
+
+
+@media screen and (max-width: 630px) {
+  .article {
+    width: 100%;
+  }
+
+  .image {
+    background-image: url("img/hero_mini.jpg");
+    background-size: cover;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 631px) {
+  .article {
+    height: auto;
+  }
+
+  .image {
+    background-image: url("img/hero_midi.jpg");
+    background-size: cover;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .article {
+    height: auto;
+  }
+
+  .image {
+      background-image: url("img/hero_maxi.jpg");
+      background-size: cover;
+      height: 600px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .article {
+    height: auto;
+  }
+
+  .container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image {
+      background-image: url("img/hero_maxi.jpg");
+      background-size: cover;
+      height: 600px;
+  }
+}
